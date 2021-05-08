@@ -1,0 +1,579 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Container Styles */
+.content {
+  width: 100%;
+  height: 100%;
+  margin-left: 60px;
+}
+
+/* Navigation Tooltip Styling */
+#fp-nav ul li .fp-tooltip {
+  color: white;
+  background-color: #222;
+  padding: 10px;
+}
+
+/* Navigation Styling */
+#fp-nav.fp-left {
+  background-color: #ed2d34;
+  left: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  width: 60px;
+}
+
+/* Product Page Styling, needed for modal */
+#productPage {
+  position: relative;
+}
+
+/* Coloring the navbar icons white */
+#fp-nav ul li a span,
+#fp-nav ul li a.active span {
+  background-color: white;
+  color: black;
+}
+
+/* Hide title and buttons */
+#product-slider h3,
+#product-slider button {
+  display: none;
+}
+
+/* Product slider active item setting */
+#product-slider .active h3,
+#product-slider .active button {
+  display: block;
+}
+
+/* Modal Styling */
+#modal {
+  display: none;
+}
+
+#modal.modal-active {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  z-index: 100;
+  width: 75vw;
+  height: 79vh;
+  transform: translate(-50%, -50%);
+}
+/* Used to prevent the carousel from stretching the screen */
+.owl-carousel {
+  overflow: hidden;
+}
+
+/* Used to scale down the home image. You can remove this. */
+img {
+  max-width: 40vw;
+}
+
+/* PLEASE START YOUR STYLES UNDERNEATH THIS */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #464646;
+  font-weight: 300;
+  line-height: 25px;
+  /* width: 100%; */
+  /* overflow-x: hidden; */
+  background-image: url(./banner.jpg);
+  background-size: cover;
+}
+
+.icons {
+  display: flex;
+  color: black;
+  justify-content: flex-end;
+  margin: 10px;
+  padding: 20px;
+}
+
+.icons-container i {
+  margin: 10px;
+  margin-right: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.icons-container i:hover {
+  background-color: #ed2d34;
+  color: white;
+  border: 2px solid #ed2d34;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+#homePage {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 50px;
+  margin: 10px;
+  justify-content: center;
+}
+
+.home-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 50%;
+  padding: 50px 50px;
+  margin: 50px;
+}
+
+.home-heading {
+  font-size: 58px;
+  line-height: 1.2;
+  color: #464646;
+  margin: 10px;
+  padding: 10px;
+}
+
+.text-gray {
+  color: #ed2d34;
+}
+
+.home-paragraph {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 20px;
+  padding: 20px;
+}
+
+.btn {
+  border: 2px solid #464646;
+  text-decoration: none;
+  color: #464646;
+  display: inline-block;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 10px 48px;
+  line-height: 1.8em;
+  width: auto;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: #ed2d34;
+  color: white;
+  border: #ed2d34;
+}
+
+.banner {
+  height: 300px;
+  width: 400px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  /* padding: 10px 50px; */
+  margin: 50px 50px;
+}
+
+.page-header-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  justify-content: space-around;
+}
+
+.page-heading {
+  font-size: 58px;
+  line-height: 1.2;
+  color: #464646;
+}
+
+.page-subtitle {
+  font-size: 58px;
+  line-height: 1.2;
+  color: #ed2d34;
+}
+
+.counter {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 20px;
+}
+
+.counter-container {
+  display: flex;
+  margin: 30px;
+  padding: 10px;
+  flex-direction: row;
+}
+
+.counter-items {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.product img {
+  width: 200px;
+  height: 420px;
+}
+
+.product h3 {
+  /* font-size: 50px; */
+  font-weight: bold;
+}
+
+.product {
+  display: grid;
+  place-items: center;
+}
+
+#testimonial-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.owl-carousel .owl-item .testimonial {
+  display: grid;
+  place-items: center;
+}
+
+.owl-carousel .owl-item .testimonial i {
+  color: #464646;
+}
+
+.owl-carousel .owl-item .testimonial img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+.owl-carousel .owl-item .testimonial q {
+  text-align: center;
+  margin: 20px;
+  color: #464646;
+}
+
+.owl-carousel .owl-item .testimonial h4 {
+  margin: 20px;
+  font-weight: normal;
+}
+
+.page-header-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.page-heading1 {
+  color: #464646;
+  font-size: 30px;
+  margin: 10px;
+  padding: 30px;
+}
+
+.page-subtitle1 {
+  color: #ed2d34;
+  font-size: 50px;
+  margin: 20px;
+}
+
+.page-header-container2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.page-heading2 {
+  color: #464646;
+  font-size: 50px;
+  margin: 10px;
+}
+
+.page-subtitle2 {
+  color: #ed2d34;
+  font-size: 50px;
+  margin: 10px;
+}
+
+#contactPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.fix-container {
+  display: flex;
+  align-items: center;
+}
+
+.contact-details-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 10px;
+  margin: 25px;
+}
+
+.contact-details-heading {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 10px;
+}
+
+.contact-details-description {
+  margin: 10px;
+}
+
+.contact-details-icons {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.contact-icons {
+  display: inline-block;
+  margin: 10px;
+  color: #464646;
+}
+
+.contact-icons i {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.social-icons {
+  display: flex;
+  margin: 20px;
+}
+
+.social-icons i {
+  margin: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.social-icons i:hover {
+  background-color: #ed2d34;
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.contact-input {
+  border: none;
+  border-bottom: 1px solid #464646;
+  margin: 10px;
+  color: #464646;
+  width: 100%;
+}
+
+.fix-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37%;
+}
+
+.button {
+  border: 2px solid #ed2d34;
+  border-radius: 20px;
+  background-color: white;
+  color: #ed2d34;
+  padding: 10px;
+  margin: 20px;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #ed2d34;
+  color: white;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-main-image {
+  width: 500px;
+  height: 500px;
+}
+
+.modal-images {
+  display: flex;
+}
+
+.modal-images img {
+  width: 200px;
+  height: 200px;
+}
+
+.modal-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  padding: 30px;
+}
+
+.modal-text-container p {
+  margin: 15px;
+  color: #464646;
+}
+
+.modal-heading {
+  color: #464646;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.modal-main-heading {
+  color: #ed2d34;
+  margin: 15px;
+  font-size: 38px;
+}
+
+.sizes {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.sizes h6 {
+  margin: 10px;
+  color: #464646;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.size-container {
+  display: flex;
+}
+
+.size-container p {
+  color: #ed2d34;
+}
+
+.fix-this {
+  margin-top: 20px;
+}
+
+.quancol {
+  display: flex;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: row;
+}
+
+.quantity p {
+  color: #ed2d34;
+}
+
+.plus {
+  margin: 10px;
+}
+
+.minus {
+  margin: 10px;
+}
+
+.count {
+  border: none;
+  width: 10%;
+}
+
+.colors-container {
+  display: flex;
+}
+
+.colors-container p {
+  color: #ed2d34;
+}
+
+.colors-container input {
+  margin: 10px;
+}
+
+.colors-red {
+  background-color: red;
+  border: 1px solid black;
+  padding: 10px 10px;
+}
+
+.colors-blue {
+  background-color: blue;
+  border: 1px solid black;
+  padding: 10px 10px;
+}
+
+.colors-green {
+  background-color: limegreen;
+  border: 1px solid black;
+  padding: 10px 10px;
+}
+
+.price-tag {
+  color: #ed2d34;
+  font-size: 38px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.modal-text {
+  margin-top: 15px;
+}
+
+.modal-text a {
+  margin: 15px;
+}
+
+.close {
+  position: absolute;
+  border: none;
+  top: 5%;
+  right: 5%;
+  background-color: white;
+  margin: 15px;
+  color: #464646;
+  transition: 0.5s ease-in;
+  font-size: 25px;
+}
+
+.close:hover {
+  color: #ed2d34;
+}
